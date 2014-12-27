@@ -8,4 +8,12 @@
 #
 include_recipe 'apt'
 include_recipe 'java'
+
+# Monkey Patching
+class Chef::Util::FileEdit
+  def file_edited?
+    @changes
+  end
+end
+
 include_recipe 'sonarqube'
