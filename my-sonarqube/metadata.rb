@@ -7,3 +7,4 @@ long_description 'Installs/Configures my-sonarqube'
 version          '0.1.0'
 
 depends          'java'
+depends          'sonarqube'
