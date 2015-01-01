@@ -6,6 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'apt'
+include_recipe 'java'
 
 sonar_runner_zipfile_destination = ::File.join(Chef::Config[:file_cache_path], "sonar-runner-dist-2.4.zip")
 
