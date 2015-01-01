@@ -6,3 +6,5 @@ description      'Installs/Configures my-sonar-runner'
 long_description 'Installs/Configures my-sonar-runner'
 version          '0.1.0'
 
+depends          'apt'
+depends          'java'
