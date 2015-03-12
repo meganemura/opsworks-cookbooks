@@ -22,3 +22,11 @@ template "/home/ubuntu/roboankou/.env" do
   source 'ruboty.env.erb'
   action :create
 end
+
+# LevelDB
+package 'leveldb' do
+  action :install
+end
+package 'snappy' do
+  action :install
+end
